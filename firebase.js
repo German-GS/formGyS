@@ -23,7 +23,7 @@ const app = initializeApp(firebaseConfig);
 
 const db = getFirestore()
 
-export const saveMember = async (idNumber, membName, lastName, celPhone, fechaNac, age, provincia, addres) =>{
+export const saveMember = async (idNumber, membName, lastName, celPhone, fechaNac, age, provincia, addres, orgDate, promDate) =>{
     try {
         const docRef = await addDoc(collection(db, 'members'), {
             idNumber,
@@ -34,9 +34,14 @@ export const saveMember = async (idNumber, membName, lastName, celPhone, fechaNa
             age,
             provincia,
             addres,
+            orgDate, 
+            promDate
         });
         console.log("Document written with ID: ", docRef.id);
     } catch (e) {
         console.error("Error adding document: ", e);
     }
-};
+}
+
+export const getMembers = () =>  console.log('Members list')
+
