@@ -3,7 +3,8 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/9.20.0/firebas
 import {
     getFirestore, 
     collection, 
-    addDoc 
+    addDoc,
+    getDocs
 } from "https://www.gstatic.com/firebasejs/9.20.0/firebase-firestore.js"
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -43,5 +44,5 @@ export const saveMember = async (idNumber, membName, lastName, celPhone, fechaNa
     }
 }
 
-export const getMembers = () =>  console.log('Members list')
+export const getMembers = () =>  getDocs(collection(db, 'members'), )
 
