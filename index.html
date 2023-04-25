@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro miembros Guias y Scout de Costa Rica</title>
+    
+</head>
+<body>
+    <form id="reg-form" action="">
+        <label for="" id="id-number">Cedula</label>
+        <input type="text" placeholder="Cedula" id="id-number">
+
+        <label for="">Nombre</label>
+        <input id="name" type="text" placeholder="Nombre">
+
+        <label for="">Apellido</label>
+        <input type="text" id="last-name" placeholder="Apellido">
+
+        <label for="">Celular</label>
+        <input type="number" id="cel-phone" placeholder="Numero de telefono">
+
+        <label for="">Fecha de nacimiento</label>
+        <input type="date" id="fecha-nac">
+
+        <label for="">Edad</label>
+        <input type="number" placeholder="edad" id="age">
+
+        <label for="">Grupo al que pertenece</label>
+        <input type="number" placeholder="numero de Grupo" id="group-num">
+
+        <label for="">Provincia</label>
+        <select id="provincia" name="provincia">
+            <option value="san_jose">San José</option>
+            <option value="limon">Limón</option>
+            <option value="heredia">Heredia</option>
+            <option value="cartago">Cartago</option>
+            <option value="alajuela">Alajuela</option>
+            <option value="puntarenas">Puntarenas</option>
+            <option value="guanacaste">Guanacaste</option>
+          </select>
+
+          <label for="">Direccion exacta</label>
+          <textarea name="" id="addres" cols="30" rows="10"></textarea>
+
+        <button id="btn-regis">Registrar</button>
+
+    </form>
+
+    <script type="module" src="index.js"></script>
+    
+</body>
+</html>
