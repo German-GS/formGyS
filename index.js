@@ -12,7 +12,7 @@ window.addEventListener("DOMContentLoaded", async () => {
       querySnapshot.forEach((doc) => {
         // Agregar la información en una nueva fila de la tabla
         html += `
-              <tr>
+              <tr class="table-primary">
                   <td>${doc.data().idNumber}</td>
                   <td>${doc.data().membName}</td>
                   <td>${doc.data().lastName}</td>
