@@ -6,59 +6,80 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de Registro miembros Guias y Scout de Costa Rica</title>
+    <link rel="stylesheet" href="https://bootswatch.com/5/pulse/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
 
 </head>
 
 <body>
-    <form id="reg-form" action="">
-        <label for="" id="id-number">Cedula</label>
-        <input type="text" placeholder="Cedula" id="id-number">
+    <div class="container text-white">
+            <form id="reg-form" class="row" action="">
+                <h2>Registro Miembros Guias y Scout</h2>
+                <div class="col-md-6">
+                    <label for="" id="id-number">Cedula</label>
+                    <input class="form-control mb-3" type="text" placeholder="Cedula" id="id-number">
 
-        <label for="">Nombre</label>
-        <input id="name" type="text" placeholder="Nombre">
+                    <label for="">Nombre</label>
+                    <input class="form-control mb-3" id="name" type="text" placeholder="Nombre">
 
-        <label for="">Apellido</label>
-        <input type="text" id="last-name" placeholder="Apellido">
+                    <label for="">Apellido</label>
+                    <input class="form-control mb-3" type="text" id="last-name" placeholder="Apellido">
 
-        <label for="">Celular</label>
-        <input type="number" id="cel-phone" placeholder="Numero de telefono">
+                    <label for="">Celular</label>
+                    <input class="form-control mb-3" type="number" id="cel-phone" placeholder="Numero de telefono">
 
-        <label for="">Fecha de nacimiento</label>
-        <input type="date" id="fecha-nac">
+                    <label for="">Fecha de nacimiento</label>
+                    <input class="form-control mb-3" type="date" id="fecha-nac">
 
-        <label for="">Edad</label>
-        <input type="number" placeholder="edad" id="age">
+                    <label for="">Edad</label>
+                    <input class="form-control mb-3" type="number" placeholder="edad" id="age">
 
-        <label for="">Grupo al que pertenece</label>
-        <input type="number" placeholder="numero de Grupo" id="group-num">
 
-        <label for="">Provincia</label>
-        <select id="provincia" name="provincia">
-            <option value="san_jose">San José</option>
-            <option value="limon">Limón</option>
-            <option value="heredia">Heredia</option>
-            <option value="cartago">Cartago</option>
-            <option value="alajuela">Alajuela</option>
-            <option value="puntarenas">Puntarenas</option>
-            <option value="guanacaste">Guanacaste</option>
-        </select>
+                </div>
+                <div class="col-md-6">
 
-        <label for="">Fecha de ingreso al movimiento</label>
-        <input type="date" name="" id="org-date">
+                    <label for="">Grupo al que pertenece</label>
+                    <input class="form-control mb-3" type="number" placeholder="numero de Grupo" id="group-num">
 
-        <label for="">Fecha de su primera promesa</label>
-        <input type="date" name="" id="promise-date">
+                    <label for="">Provincia</label>
+                    <select class="form-select" id="provincia" name="provincia">
+                        <option value="San Jose">San José</option>
+                        <option value="Limon">Limón</option>
+                        <option value="Heredia">Heredia</option>
+                        <option value="Cartago">Cartago</option>
+                        <option value="Alajuela">Alajuela</option>
+                        <option value="Puntarenas">Puntarenas</option>
+                        <option value="Guanacaste">Guanacaste</option>
+                    </select>
 
-        <label for="">Direccion exacta</label>
-        <textarea name="" id="addres" cols="30" rows="10"></textarea>
+                    <label for="">Fecha de ingreso al movimiento</label>
+                    <input class="form-control mb-3" type="date" name="" id="org-date">
 
-        <button id="btn-regis">Registrar</button>
+                    <label for="">Fecha de su primera promesa</label>
+                    <input class="form-control mb-3" type="date" name="" id="promise-date">
 
-    </form>
+                    <label for="">Direccion exacta</label>
+                    <textarea class="form-control mb-3" name="" id="addres" cols="30"></textarea>
 
-    <div id="membersContainer">
+                    <button class="btn btn-primary" id="btn-regis">Registrar</button>
+
+                </div>
+
+
+
+            </form>
+
+            <div class="col-md-12">
+                <div id="membersContainer">
+
+                </div>
+
+            </div>
+
 
     </div>
+
+
 
     <script type="module" src="index.js"></script>
 
