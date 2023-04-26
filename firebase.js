@@ -5,7 +5,9 @@ import {
     collection, 
     addDoc,
     getDocs,
-    onSnapshot
+    onSnapshot,
+    deleteDoc,
+    doc
 } from "https://www.gstatic.com/firebasejs/9.20.0/firebase-firestore.js"
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -40,6 +42,7 @@ export const saveMember = async (idNumber, membName, lastName, celPhone, fechaNa
             promDate
         });
         console.log("Document written with ID: ", docRef.id);
+   
     } catch (e) {
         console.error("Error adding document: ", e);
     }
@@ -48,4 +51,8 @@ export const saveMember = async (idNumber, membName, lastName, celPhone, fechaNa
 export const getMembers = () =>  getDocs(collection(db, 'members'), )
 
 export const onGetMembers = (callback) => onSnapshot(collection(db, 'members'), callback)
+//Exporta el id de cada usario
+
+
+export const deleteMember = id => deleteDoc(doc(db, 'members', id))
 

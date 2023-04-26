@@ -1,4 +1,4 @@
-import { saveMember, getMembers, onGetMembers } from "./firebase.js";
+import { saveMember, getMembers, onGetMembers, deleteMember} from "./firebase.js";
 
 const membersContainer = document.getElementById("membersContainer");
 const regform = document.getElementById("reg-form");
@@ -23,12 +23,19 @@ window.addEventListener("DOMContentLoaded", async () => {
                   <td>${doc.data().addres}</td>
                   <td>${doc.data().orgDate}</td>
                   <td>${doc.data().promDate}</td>
+                  <td><button class="btn btn-delete badge rounded-pill bg-warning" data-id="${doc.id}">Eliminar</button></td>
               </tr>
           `;
       });
   
       html += "</tbody></table>";
       membersContainer.innerHTML = html;
+      const btnDelete = membersContainer.querySelectorAll('.btn-delete')
+      btnDelete.forEach(btn =>{
+        btn.addEventListener('click', ({target:{dataset}})=>{
+            deleteMember(dataset.id)
+        })
+      })
     });
   });
   
