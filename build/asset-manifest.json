@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.834320d6.css",
+    "main.js": "/static/js/main.47af6125.js",
+    "static/js/787.8343f13d.chunk.js": "/static/js/787.8343f13d.chunk.js",
+    "static/media/guiasyscout-blanco.png": "/static/media/guiasyscout-blanco.608f1c9424423ae41271.png",
+    "index.html": "/index.html",
+    "main.834320d6.css.map": "/static/css/main.834320d6.css.map",
+    "main.47af6125.js.map": "/static/js/main.47af6125.js.map",
+    "787.8343f13d.chunk.js.map": "/static/js/787.8343f13d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.834320d6.css",
+    "static/js/main.47af6125.js"
+  ]
+}
